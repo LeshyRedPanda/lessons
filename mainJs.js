@@ -2,7 +2,7 @@
 
 
 
-debugger
+//debugger
 
 
 let numberOfFilms; // = +prompt("how many movies u see?")
@@ -66,8 +66,8 @@ function showMyDB(hidden){
     }
 }
 
-//showMyDB(personalMovieDB.privat);
-
+showMyDB(personalMovieDB.privat);
+/*
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
         const genre = prompt(`Your favorite genre number ${i}`);
@@ -77,6 +77,23 @@ function writeYourGenres() {
 }
 
 writeYourGenres();
+*/
+
+function writeYourGenres() {
+    for (let i = 1; i <= 3; i++) {
+        const genre = prompt(`Your favorite genre number ${i}`);
+        personalMovieDB.genres[i - 1] = genre; 
+    }
+}
+
+writeYourGenres();
+
+
+
+
+
+
+
 
 console.log(personalMovieDB);
 
